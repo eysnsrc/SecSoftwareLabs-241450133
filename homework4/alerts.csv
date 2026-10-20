@@ -1,0 +1,10 @@
+src_ip,method,url,attack,severity,action
+10.10.1.20,GET,/products?id=1' OR 1=1--,SQL_INJECTION,HIGH,BLOCK
+10.10.1.21,GET,"/users?id=1 UNION SELECT username, password FROM users",SQL_INJECTION,HIGH,BLOCK
+10.10.1.22,POST,/login?user=admin'--,SQL_INJECTION,HIGH,BLOCK
+10.10.1.23,GET,/products?id=1%27%20OR%201%3D1--,SQL_INJECTION,HIGH,BLOCK
+10.10.1.30,GET,/search?q=%3Cscript%3Ealert(1)%3C/script%3E,XSS,HIGH,BLOCK
+10.10.1.31,GET,/profile?bio=<img src=x onerror=alert(1)>,XSS,HIGH,BLOCK
+10.10.1.40,GET,/download?file=../../../../etc/passwd,PATH_TRAVERSAL,MEDIUM,BLOCK
+10.10.1.41,GET,/view?path=..\..\windows\system32,PATH_TRAVERSAL,MEDIUM,BLOCK
+10.10.1.50,GET,/blog/post?title=sql union select tutorial,SQL_INJECTION,HIGH,BLOCK
