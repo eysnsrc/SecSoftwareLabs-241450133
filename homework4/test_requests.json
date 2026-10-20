@@ -1,0 +1,65 @@
+[
+  {
+    "src_ip": "10.10.1.10",
+    "method": "GET",
+    "url": "/products?id=15"
+  },
+  {
+    "src_ip": "10.10.1.11",
+    "method": "POST",
+    "url": "/login"
+  },
+  {
+    "src_ip": "10.10.1.12",
+    "method": "GET",
+    "url": "/about-us"
+  },
+  {
+    "src_ip": "10.10.1.20",
+    "method": "GET",
+    "url": "/products?id=1' OR 1=1--"
+  },
+  {
+    "src_ip": "10.10.1.21",
+    "method": "GET",
+    "url": "/users?id=1 UNION SELECT username, password FROM users"
+  },
+  {
+    "src_ip": "10.10.1.22",
+    "method": "POST",
+    "url": "/login?user=admin'--"
+  },
+  {
+    "src_ip": "10.10.1.23",
+    "method": "GET",
+    "url": "/products?id=1%27%20OR%201%3D1--"
+  },
+  {
+    "src_ip": "10.10.1.30",
+    "method": "GET",
+    "url": "/search?q=%3Cscript%3Ealert(1)%3C/script%3E"
+  },
+  {
+    "src_ip": "10.10.1.31",
+    "method": "GET",
+    "url": "/profile?bio=<img src=x onerror=alert(1)>"
+  },
+  {
+    "src_ip": "10.10.1.40",
+    "method": "GET",
+    "url": "/download?file=../../../../etc/passwd"
+  },
+  {
+    "src_ip": "10.10.1.41",
+    "method": "GET",
+    "url": "/view?path=..\\..\\windows\\system32"
+  },
+  {
+    "src_ip": "10.10.1.50",
+    "method": "GET",
+    "url": "/blog/post?title=sql union select tutorial"
+  },
+  {
+    "src_ip": "10.10.1.60"
+  }
+]
